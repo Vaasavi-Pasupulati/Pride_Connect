@@ -1,0 +1,92 @@
+.container {
+  height: 100px;
+  padding: 0px 50px;
+  background-color: rgb(136, 136, 236);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  flex: 3;
+}
+
+.item:last-child {
+  justify-content: flex-end;
+}
+
+.callButton {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.texts {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.text:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.list {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: rgb(255, 255, 255);
+}
+
+.listItem {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.cart {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  border-radius: 50%;
+  height: 20px;
+  background-color: rgb(207, 63, 34);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 480px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+
+  .item:nth-child(1) {
+    flex: 3;
+  }
+}
