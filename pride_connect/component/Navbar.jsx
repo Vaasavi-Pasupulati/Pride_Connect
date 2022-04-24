@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import Cart from "../pages/cart";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
@@ -31,7 +33,13 @@ const Navbar = () => {
       </div>
       <div classNName={styles.item}>
         <div classNName={styles.cart}>
-          <Image src="/img/cart.jpg" alt="" width="30px" height="30px" />
+          <Image
+            src="/img/cart.jpg"
+            onClick={Cart}
+            alt=""
+            width="30px"
+            height="30px"
+          />
         </div>
         <div className={styles.counter}>2</div>
       </div>

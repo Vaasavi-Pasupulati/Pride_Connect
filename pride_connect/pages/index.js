@@ -4,6 +4,7 @@ import Featured from "../component/Featured";
 import TourCard from "../component/TourCard";
 import styles from "../styles/Home.module.css";
 import PackageList from "../component/PackageList";
+import Link from "next/link";
 
 export default function Home() {
   return (
