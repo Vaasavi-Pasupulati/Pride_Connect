@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className={styles.item}>
         <div className={styles.card}>
-          <h2 className={styles.motto}>WIDE RANGE OF TOUR PACKAGES FOR ALL</h2>
+          <h2 className={styles.motto}>WID RANGE OF TOUR PACKAGES FOR ALL</h2>
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>BOOK OUR PACKAGE</h1>
